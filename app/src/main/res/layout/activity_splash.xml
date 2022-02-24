@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@android:color/black"
+    tools:context=".Splash">
+
+    <ImageView
+        android:id="@+id/imgBg"
+        android:alpha="0"
+        android:layout_width="match_parent"
+        android:src="@drawable/captura"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="50dp"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="match_parent"></ImageView>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:alpha="0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/cp_progress_bar"
+        android:indeterminateDuration="@android:integer/config_longAnimTime"
+        app:layout_constraintBottom_toBottomOf="@id/imgBg"
+        android:layout_marginBottom="130dp"
+        app:layout_constraintLeft_toLeftOf="@+id/imgBg"
+        app:layout_constraintRight_toRightOf="@+id/imgBg"></ProgressBar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
